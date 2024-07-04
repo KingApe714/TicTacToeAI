@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+.modal-button,
+.restart-button,
+.play-music,
+.pause-music {
+  height: 25px;
+  width: 70px;
+  margin: 5px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  background-color: bisque;
+  box-shadow: 3px 3px 10px;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.play-music,
+.pause-music {
+  font-size: 12px;
+}
+
+.modal-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.5s;
+  z-index: 2;
+}
+
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal {
+  font-family: "Nunito Sans", sans-serif;
+  padding: 20px;
+  background-color: #ff5003;
+  border-radius: 15px;
+  position: relative;
+  width: 70%;
+  min-width: 645px;
+  max-width: 800px;
+  max-height: 700px;
+  z-index: 2;
+
+  overflow: auto;
+}
+
+.modal-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-image: url("./images/tile-image.jpeg"); */
+  filter: brightness(110%);
+  border-radius: inherit;
+  padding: 15px;
+  box-shadow: 1px 1px 10px white inset;
+}
+
+.modal-title {
+  width: fit-content;
+}
+
+.modal-child {
+  width: -webkit-fill-available;
+  background-color: #0077b6;
+  box-shadow: 3px 3px 10px black;
+  color: white;
+  font-weight: 300;
+  padding: 30px;
+}

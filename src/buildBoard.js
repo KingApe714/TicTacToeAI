@@ -15,14 +15,10 @@ export default class GameNode {
       e.preventDefault();
       this.playMove();
     });
-    this.div.addEventListener(
-      "touchstart",
-      (e) => {
-        e.preventDefault();
-        this.playMove();
-      },
-      { passive: true }
-    );
+    this.div.addEventListener("touchstart", (e) => {
+      e.preventDefault();
+      this.playMove();
+    });
   }
 
   playMove() {
