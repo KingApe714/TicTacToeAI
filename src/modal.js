@@ -11,7 +11,7 @@ export function modal() {
     modalBg.classList.add("bg-active");
     modalTitle.innerHTML = "INSTRUCTIONS";
     modalChild.innerHTML =
-      "-Make as many words as you can by swiping through adjacent tiles.<br>-Only words that are 3 letters or longer will be accepted.<br>-You can repeat words so long as you use a different arrangement of letters.";
+      "-Play the damn game.<br>-It's working only a little bit for now.<br>-You're gay.";
   });
 
   modalClose.style.display = "block";
